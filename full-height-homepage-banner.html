@@ -64,21 +64,26 @@ color: #ffffff!important;
 background-color: #003279;
 }
 /* XL displays */
-@media only screen and (min-width: 1921px) {
+@media only screen and (min-width: 1281px) {
 .full-banner-container {
-height: 1000px;
+height: calc(100vh - 240px);
 }
 }
 /* 1920 x 1080 */
-@media only screen and (max-width: 1920px) {
+@media only screen and (max-width: 1280px) {
 .full-banner-container {
-height: 840px;
+height: calc(100vh - 235px);
+}
+}
+@media only screen and (max-width: 1160px) {
+  .full-banner-container {
+height: calc(100vh - 234px);
 }
 }
 /* 1366 x 768 */
-@media only screen and (max-width: 1366px) {
+@media only screen and (max-width: 1024px) {
 .full-banner-container {
-height: 530px;
+height: calc(100vh - 325px);
 }
 .full-banner-container h1 {
 font-size: 80px;
@@ -87,7 +92,10 @@ font-size: 80px;
 font-size: 33px;
 }
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 842px) {
+  .full-banner-container {
+height: calc(100vh - 365px);
+}
 .full-banner-container h1 {
 font-size: 60px;
 }
@@ -98,11 +106,23 @@ font-size: 30px;
 padding: 20px;
 }
 }
+@media only screen and (max-width: 767px) {
+  .full-banner-container {
+height: calc(100vh - 293px);
+}
+}
+@media only screen and (max-width: 630px) {
+  .full-banner-container {
+height: calc(100vh - 315px);
+}
+}
+@media only screen and (max-width: 480px) {
+  .full-banner-container {
+height: calc(100vh - 287px);
+}
+}
 /* 375 x 667 */
 @media only screen and (max-width: 375px) {
-.full-banner-container {
-height: 380px;
-}
 .full-banner-container h1 {
 font-size: 40px;
 }
@@ -113,7 +133,12 @@ font-size: 20px;
 padding: 10px;
 }
 }
+@media only screen and (max-width: 313px) {
+  .full-banner-container {
+height: calc(100vh - 320px);
 }
+}
+
 </style>
 <header class="full-banner-image" style="background-image: url(https://cms.yorksj.ac.uk/terminalfour/SiteManager?ctfn=download&fnno=60&ceid=7247cc02953eef6d0c5942dc70c685f70a3decd0);">
   <div class="full-banner-container">
