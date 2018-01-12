@@ -1,0 +1,126 @@
+<style>
+.full-banner-image {
+background-size: cover;
+background-position: 50%;
+padding: 0;
+overflow: hidden;
+position: relative;
+z-index: -1;
+}
+.full-banner-image::before {
+content: '';
+position: absolute;
+top: 0;
+right: 0;
+bottom: 0;
+left: 0;
+background: rgba(255,255,255,0.8);
+background: -webkit-radial-gradient(rgba(255,255,255,0.8),rgba(255,255,255,0));
+background: -o-radial-gradient(rgba(255,255,255,0.8),rgba(255,255,255,0));
+background: -moz-radial-gradient(rgba(255,255,255,0.8),rgba(255,255,255,0));
+background: radial-gradient(rgba(255,255,255,0.8),rgba(255,255,255,0));
+z-index: -1;
+}
+.full-banner-container {
+display: flex;
+display: -webkit-flex;
+display: -ms-flexbox;
+align-items: center;
+-webkit-align-items: center;
+justify-content: center
+}
+.full-banner-container > div {
+text-align: center;
+}
+.full-banner-container h1 {
+text-align: center;
+color: #121513;
+text-shadow: none;
+font-size: 100px;
+letter-spacing: -4px;
+line-height: 0.9;
+text-transform: uppercase;
+}
+.full-banner-container h2 {
+text-align: center;
+color: #535353;
+font-size: 36px;
+margin: 20px 0 50px;
+}
+.header-cta-button {
+color: #ffffff;
+font-size: 18px;
+font-weight: 700;
+text-transform: uppercase;
+transition: all .1s ease-in-out;
+-moz-transition: all .1s ease-in-out;
+-webkit-transition: all .1s ease-in-out;
+background-color: #2D5BA9;
+border-radius: 12px;
+padding: 17px 24px 14px;
+}
+.header-cta-button:hover {
+color: #ffffff!important;
+background-color: #003279;
+}
+/* XL displays */
+@media only screen and (min-width: 1921px) {
+.full-banner-container {
+height: 1000px;
+}
+}
+/* 1920 x 1080 */
+@media only screen and (max-width: 1920px) {
+.full-banner-container {
+height: 840px;
+}
+}
+/* 1366 x 768 */
+@media only screen and (max-width: 1366px) {
+.full-banner-container {
+height: 530px;
+}
+.full-banner-container h1 {
+font-size: 80px;
+}
+.full-banner-container h2 {
+font-size: 33px;
+}
+}
+@media only screen and (max-width: 768px) {
+.full-banner-container h1 {
+font-size: 60px;
+}
+.full-banner-container h2 {
+font-size: 30px;
+}
+.full-banner-container > div {
+padding: 20px;
+}
+}
+/* 375 x 667 */
+@media only screen and (max-width: 375px) {
+.full-banner-container {
+height: 380px;
+}
+.full-banner-container h1 {
+font-size: 40px;
+}
+.full-banner-container h2 {
+font-size: 20px;
+}
+.full-banner-container > div {
+padding: 10px;
+}
+}
+}
+</style>
+<header class="full-banner-image" style="background-image: url(https://cms.yorksj.ac.uk/terminalfour/SiteManager?ctfn=download&fnno=60&ceid=7247cc02953eef6d0c5942dc70c685f70a3decd0);">
+  <div class="full-banner-container">
+    <div>
+      <h1>We are<br>postgrad</h1>
+      <h2>Exciting new courses coming soon</h2>
+      <a class="header-cta-button" href="https://www.yorksj.ac.uk/study/undergraduate/how-to-apply/">Find out more</a>
+    </div>
+  </div>
+</header>
